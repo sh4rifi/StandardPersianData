@@ -60,8 +60,8 @@ class StandardPersianData extends Controller
 
     public function makeTablesStandard()
     {
-        foreach (getTables() as $table)
-            makeTableStandard($table);
+        foreach ($this->getTables() as $table)
+            $this->makeTableStandard($table);
         return true;
     }
 
